@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,18 +9,32 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Document</title>
 </head>
+
 <body>
   <div class="container-xxl">
     <h1 class="header text-center">Pokemons</h1>
-
-    <ul class="card-wrapper ">
+    <form class="form d-flex w-50 mx-auto">
+      <input type="search" class="form-control input me-1">
+      <select class="select form-select me-1">
+        <option value="" disabled selected>Tanla</option>
+        <option value="aazz">A_Z</option>
+        <option value="zzaa">Z_A</option> 
+        <option value="kgstart">Kg-Start</option>
+        <option value="kgend">Kg-End</option>
+      </select>
+      <select  name="genres"  class="genres-select form-select me-1">
+        <option value="All">All</option>
+      </select>
+      <button class="btn btn-info btns ms-1" type="submit">Search</button>
+    </form>
+    <ul class="card-wrapper">
 
     </ul>
   </div>
 
   <script src="js/pokemons.js"></script>
-  <script src="js/utils.js"></script>
   <script src="js/index.js"></script>
-  <script src="./js/masala.js"></script>
+  <!-- <script src="./js/masala.js"></script> -->
 </body>
+
 </html>
